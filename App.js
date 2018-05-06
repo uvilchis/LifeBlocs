@@ -4,6 +4,7 @@ import { createStackNavigator } from 'react-navigation';
 import RoleSelect from './components/RoleSelect';
 import DonorLogin from './components/DonorLogin';
 import DonorOrgLogin from './components/DonorOrgLogin';
+import DonorHome from './components/DonorHome';
 
 export default class App extends React.Component {
   render() {
@@ -13,15 +14,10 @@ export default class App extends React.Component {
 
 const RootStack = createStackNavigator (
   {
-    Home: {
-      screen: RoleSelect
-    },
-    DonorLogin: {
-      screen: DonorOrgLogin
-    },
-    DonorOrgLogin: {
-      screen: DonorOrgLogin
-    }
+    Home: { screen: RoleSelect },
+    DonorLogin: { screen: DonorLogin },
+    DonorOrgLogin: { screen: DonorOrgLogin },
+    DonorHome: { screen: DonorHome }
   }, 
   { 
     navigationOptions: {

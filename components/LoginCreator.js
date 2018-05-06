@@ -5,8 +5,14 @@ export default function LoginCreator (WrappedComponent) {
     constructor(props) {
       super(props);
     }
+    
+    confirmLogin = (screen) => {
+      console.log('whooaoaaa', screen)
+      this.props.navigation.navigate(screen)
+    }
+    
     render () {
-      return <WrappedComponent />
+      return <WrappedComponent confirmLogin={this.confirmLogin}/>
     }
   }
 }
