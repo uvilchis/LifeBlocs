@@ -1,7 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { createStackNavigator } from 'react-navigation';
-import HomeScreen from './components/HomeScreen';
+import RoleSelect from './components/RoleSelect';
+import DonorLogin from './components/DonorLogin';
+import DonorOrgLogin from './components/DonorOrgLogin';
 
 export default class App extends React.Component {
   render() {
@@ -12,8 +14,14 @@ export default class App extends React.Component {
 const RootStack = createStackNavigator (
   {
     Home: {
-      screen: HomeScreen
+      screen: RoleSelect
     },
+    DonorLogin: {
+      screen: DonorOrgLogin
+    },
+    DonorOrgLogin: {
+      screen: DonorOrgLogin
+    }
   }, 
   { 
     navigationOptions: {
