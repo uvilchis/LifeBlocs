@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import LoginCreator from './LoginCreator';
 
-export default class DonorOrgLogin extends React.Component {
+class DonorOrgPage extends React.Component {
   static navigationOptions = {
     title: 'DonorOrgLogin'
   }
@@ -15,6 +15,8 @@ export default class DonorOrgLogin extends React.Component {
     )
   }
 }
+
+export default DonorOrgLogin = LoginCreator(DonorOrgPage);
 
 const styles = StyleSheet.create({
   text: {
