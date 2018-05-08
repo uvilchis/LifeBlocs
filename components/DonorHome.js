@@ -7,30 +7,25 @@ export default class DonorHome extends React.Component {
     headerTitle: 'L I F E B L O C S'
   }
 
+  navigateToScreen = (screen) => {
+    this.props.navigation.navigate(screen);
+  }
+  
   render () {
     return (
       <View style={styles.container}>
-        <Text style={styles.title}>
-          DONOR HOME 
-        </Text>
-        <Text style={styles.title}>
-          I Would like to donate 
-        </Text>
-        <TouchableOpacity>
-          <Text style={styles.title}>
-            Blood 
-          </Text>
+        <Text style={styles.options}>DONOR HOME</Text>
+        <Text style={styles.title}>I Want To Donate</Text>
+        <TouchableOpacity onPress={() => this.navigateToScreen('BloodDonations')}>
+          <Text style={styles.options}>Blood</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
-          <Text style={styles.title}>
-            Bone Marrow
-          </Text>
+        <TouchableOpacity onPress={() => this.navigateToScreen('BoneMarrowDonations')}>
+          <Text style={styles.options}>Bone Marrow</Text>
         </TouchableOpacity>
       </View>    
     ) 
   }
 }
-
 
 const styles = StyleSheet.create({
     container: {
@@ -39,6 +34,13 @@ const styles = StyleSheet.create({
       alignItems: 'center'
     },
     title: {
+      color: 'red',
+      fontWeight: 'bold',
+      fontSize: 20,
+      marginTop: 50,
+      textDecorationLine: 'underline'
+    },
+    options: {
       color: 'red',
       fontWeight: 'bold',
       fontSize: 20,
