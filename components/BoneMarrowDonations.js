@@ -10,7 +10,6 @@ export default class BoneMarrowDonations extends React.Component {
   render () {
     return (
       <View style={styles.container}>
-         <Text style={styles.header}>I Want To</Text>
          <TouchableOpacity>
            <Text style={styles.options}>Donate Bone Marrow</Text>
          </TouchableOpacity>

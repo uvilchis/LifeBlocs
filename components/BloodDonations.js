@@ -10,7 +10,6 @@ export default class BloodDonations extends React.Component {
   render () {
     return (
       <View style={styles.container}>
-         <Text style={styles.header}>I Want To</Text>
          <TouchableOpacity>
            <Text style={styles.options}>Donate Blood</Text>
          </TouchableOpacity>
@@ -39,10 +38,23 @@ const styles = StyleSheet.create({
     textDecorationLine: 'underline'
   },
   options: {
-    color: 'red',
+    backgroundColor: 'red',
     fontWeight: 'bold',
     fontSize: 20,
     marginTop: 50
   }
 });
  
+// for the map - make a prototype design 
+// have the track and confirm go to a QR code scanning screen 
+// put the logo on the banner 
+
+// for im a donor > blood > track > qr code > add a screen here for an example of what the tracking would look like (repeat this for blood and bone marrow for both donor and donor orgs)
+// the general gist is that you scan the QR code or enter the numerical info and it gives you the relevant information about that donation 
+
+// try to center the buttons 
+
+// also see if you can get the logo somewhere nice 
+
+// shoot for sunday 
+

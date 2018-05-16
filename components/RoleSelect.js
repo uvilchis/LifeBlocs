@@ -1,10 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
+import LogoHeader from './LogoHeader';
+
+
 export default class RoleSelect extends React.Component {
   static navigationOptions = {
     title: 'Home',
-    headerTitle: 'L I F E B L O C S'
+    headerTitle: <LogoHeader />
   }
 
   navigateToScreen = (screen) => {
@@ -14,11 +17,12 @@ export default class RoleSelect extends React.Component {
   render () {
     return (
       <View style={styles.container}>
+         <Text style={styles.title}>I am a</Text>
          <TouchableOpacity onPress={() => this.navigateToScreen('DonorLogin')}>
-           <Text style={styles.roles}>For Donors</Text>
+           <Text style={styles.roles}>Donor</Text>
          </TouchableOpacity>
          <TouchableOpacity onPress={() => this.navigateToScreen('DonorOrgLogin')}>
-           <Text style={styles.roles}>For Donor Organizations</Text>
+           <Text style={styles.roles}>Donor Organization</Text>
          </TouchableOpacity>
       </View>
     );
@@ -34,10 +38,22 @@ const styles = StyleSheet.create({
 
     },
     roles: {
+      backgroundColor: 'red',
+      color: 'white',
+      fontWeight: 'bold',
+      fontSize: 20,
+      marginTop: 50,
+      borderRadius: 50,
+      padding:10
+    },
+    title: {
       color: 'red',
       fontWeight: 'bold',
       fontSize: 20,
-      marginTop: 50
+      marginTop: 50,
+      textDecorationLine: 'underline'
     }
   });
+
+  // add red boxes 
  

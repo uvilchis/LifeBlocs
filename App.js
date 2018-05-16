@@ -32,7 +32,7 @@ const RootStack = createStackNavigator (
       headerTintColor: '#fff',
       headerTitleStyle: {
         fontWeight: 'bold',
-      },
+      }
     },
   }
 );
