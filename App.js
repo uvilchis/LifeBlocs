@@ -8,6 +8,8 @@ import DonorHome from './components/DonorHome';
 import BloodDonations from './components/BloodDonations';
 import BoneMarrowDonations from './components/BoneMarrowDonations';
 
+import LogoHeader from './components/LogoHeader';
+
 export default class App extends React.Component {
   render() {
     return <RootStack />;
@@ -32,7 +34,8 @@ const RootStack = createStackNavigator (
       headerTintColor: '#fff',
       headerTitleStyle: {
         fontWeight: 'bold',
-      }
+      },
+      headerTitle: <LogoHeader/>
     },
   }
 );

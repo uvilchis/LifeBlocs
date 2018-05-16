@@ -3,8 +3,7 @@ import { StyleSheet, Text, View, TouchableOpacity, TextInput } from 'react-nativ
 
 export default class DonorHome extends React.Component {
   static navigationOptions = {
-    title: 'DonorHome',
-    headerTitle: 'L I F E B L O C S'
+    title: 'DonorHome'
   }
 
   navigateToScreen = (screen) => {

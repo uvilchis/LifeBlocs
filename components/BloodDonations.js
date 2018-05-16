@@ -3,8 +3,7 @@ import { StyleSheet, Text, View, TouchableOpacity, TextInput } from 'react-nativ
 
 export default class BloodDonations extends React.Component {
   static navigationOptions = {
-    title: 'BloodDonations',
-    headerTitle: 'L I F E B L O C S'
+    title: 'BloodDonations'
   }
   
   render () {

@@ -3,8 +3,7 @@ import { StyleSheet, Text, View, TouchableOpacity, TextInput } from 'react-nativ
 
 export default class BoneMarrowDonations extends React.Component {
   static navigationOptions = {
-    title: 'BoneMarrowDonations',
-    headerTitle: 'L I F E B L O C S'
+    title: 'BoneMarrowDonations'
   }
   
   render () {

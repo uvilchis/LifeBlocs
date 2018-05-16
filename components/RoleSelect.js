@@ -1,13 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
-import LogoHeader from './LogoHeader';
-
-
 export default class RoleSelect extends React.Component {
   static navigationOptions = {
-    title: 'Home',
-    headerTitle: <LogoHeader />
+    title: 'Home'
   }
 
   navigateToScreen = (screen) => {
