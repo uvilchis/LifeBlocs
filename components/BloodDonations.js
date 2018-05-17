@@ -9,14 +9,14 @@ export default class BloodDonations extends React.Component {
   render () {
     return (
       <View style={styles.container}>
-         <TouchableOpacity>
-           <Text style={styles.options}>Donate Blood</Text>
+         <TouchableOpacity style={styles.topButton}>
+           <Text style={styles.buttonText}>Donate Blood</Text>
          </TouchableOpacity>
-         <TouchableOpacity>
-           <Text style={styles.options}>Track a Blood Donation</Text>
+         <TouchableOpacity style={styles.button}>
+           <Text style={styles.buttonText}>Track a Blood Donation</Text>
          </TouchableOpacity>
-         <TouchableOpacity>
-           <Text style={styles.options}>Confirm a Blood Donation</Text>
+         <TouchableOpacity style={styles.button}>
+           <Text style={styles.buttonText}>Confirm a Blood Donation</Text>
          </TouchableOpacity>
       </View>
     )
@@ -27,7 +27,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center'
+    alignItems: 'center',
+    justifyContent: 'center'
   },
   header: {
     color: 'red',
@@ -36,12 +37,23 @@ const styles = StyleSheet.create({
     marginTop: 50,
     textDecorationLine: 'underline'
   },
-  options: {
+  topButton: {
+    marginTop: -100,
     backgroundColor: 'red',
+    borderRadius: 3,
+    padding:10
+  },
+  button: {
+    backgroundColor: 'red',
+    marginTop: 50,
+    borderRadius: 3,
+    padding:10
+  },
+  buttonText: {
+    color: 'white',
     fontWeight: 'bold',
-    fontSize: 20,
-    marginTop: 50
-  }
+    fontSize: 20
+  },
 });
  
 // for the map - make a prototype design 

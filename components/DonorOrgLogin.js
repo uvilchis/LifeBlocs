@@ -60,6 +60,7 @@ const styles = StyleSheet.create({
   buttonText: {
     color: 'white',
     fontWeight: 'bold',
+    fontSize: 20,
     borderRadius: 10,
     padding: 10
   }

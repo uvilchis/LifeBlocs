@@ -13,13 +13,12 @@ export default class DonorHome extends React.Component {
   render () {
     return (
       <View style={styles.container}>
-        <Text style={styles.options}>DONOR HOME</Text>
         <Text style={styles.title}>I Want To Donate</Text>
-        <TouchableOpacity onPress={() => this.navigateToScreen('BloodDonations')}>
-          <Text style={styles.options}>Blood</Text>
+        <TouchableOpacity onPress={() => this.navigateToScreen('BloodDonations')} style={styles.buttons}>
+          <Text style={styles.buttonText}>Blood</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => this.navigateToScreen('BoneMarrowDonations')}>
-          <Text style={styles.options}>Bone Marrow</Text>
+        <TouchableOpacity onPress={() => this.navigateToScreen('BoneMarrowDonations')} style={styles.buttons}> 
+          <Text style={styles.buttonText}>Bone Marrow</Text>
         </TouchableOpacity>
       </View>    
     ) 
@@ -30,20 +29,26 @@ const styles = StyleSheet.create({
     container: {
       flex: 1,
       backgroundColor: '#fff',
-      alignItems: 'center'
+      alignItems: 'center',
+      justifyContent: 'center'
     },
     title: {
       color: 'red',
       fontWeight: 'bold',
       fontSize: 20,
-      marginTop: 50,
+      marginTop: -100,
       textDecorationLine: 'underline'
     },
-    options: {
-      color: 'red',
+    buttons: {
+      backgroundColor: 'red',
+      marginTop: 50,
+      borderRadius: 3,
+      padding:10
+    },
+    buttonText: {
+      color: 'white',
       fontWeight: 'bold',
       fontSize: 20,
-      marginTop: 50
     }
   });
    

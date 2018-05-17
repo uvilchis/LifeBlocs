@@ -21,7 +21,12 @@ const RootStack = createStackNavigator (
     Home: { screen: RoleSelect },
     DonorLogin: { screen: DonorLogin },
     DonorOrgLogin: { screen: DonorOrgLogin },
-    DonorHome: { screen: DonorHome },
+    DonorHome: { 
+      screen: DonorHome, 
+      navigationOptions: {
+        headerBackTitle: null
+      } 
+    },
     BloodDonations: { screen: BloodDonations },
     BoneMarrowDonations: { screen: BoneMarrowDonations }
   }, 

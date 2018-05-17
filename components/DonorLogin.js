@@ -10,11 +10,6 @@ class DonorPage extends React.Component {
       passwordText: 'password'
     }
   }
-
-  static navigationOptions = {
-    title: 'DonorLogin'
-  }
-   
   
   render () {
     return (
@@ -57,6 +52,7 @@ const styles = StyleSheet.create({
   buttonText: {
     color: 'white',
     fontWeight: 'bold',
+    fontSize: 20,
     borderRadius: 20,
     padding: 10
   }

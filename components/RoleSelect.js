@@ -14,11 +14,11 @@ export default class RoleSelect extends React.Component {
     return (
       <View style={styles.container}>
          <Text style={styles.title}>I am a</Text>
-         <TouchableOpacity onPress={() => this.navigateToScreen('DonorLogin')}>
-           <Text style={styles.roles}>Donor</Text>
+         <TouchableOpacity onPress={() => this.navigateToScreen('DonorLogin')} style={styles.button}>
+           <Text style={styles.buttonText}>Donor</Text>
          </TouchableOpacity>
-         <TouchableOpacity onPress={() => this.navigateToScreen('DonorOrgLogin')}>
-           <Text style={styles.roles}>Donor Organization</Text>
+         <TouchableOpacity onPress={() => this.navigateToScreen('DonorOrgLogin')} style={styles.button}>
+           <Text style={styles.buttonText}>Donor Organization</Text>
          </TouchableOpacity>
       </View>
     );
@@ -30,24 +30,24 @@ const styles = StyleSheet.create({
       flex: 1,
       backgroundColor: '#fff',
       alignItems: 'center',
-      justifyContent: 'flex-start',
-
-    },
-    roles: {
-      backgroundColor: 'red',
-      color: 'white',
-      fontWeight: 'bold',
-      fontSize: 20,
-      marginTop: 50,
-      borderRadius: 50,
-      padding:10
+      justifyContent: 'center',
     },
     title: {
       color: 'red',
+      fontSize: 20,
+      marginTop: -100,
+      textDecorationLine: 'underline'
+    },
+    button: {
+      backgroundColor: 'red',
+      marginTop: 50,
+      borderRadius: 3,
+      padding:10
+    },
+    buttonText: {
+      color: 'white',
       fontWeight: 'bold',
       fontSize: 20,
-      marginTop: 50,
-      textDecorationLine: 'underline'
     }
   });
 
