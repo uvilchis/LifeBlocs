@@ -33,7 +33,7 @@ class DonorOrgPage extends React.Component {
           secureTextEntry={true}
         />
         <TouchableOpacity style={styles.button} onPress={() => this.props.confirmLogin('DonorOrgHome')}>
-        <Text style={styles.buttonText}>L O G I N</Text>
+          <Text style={styles.buttonText}>L O G I N</Text>
         </TouchableOpacity>
       </View>
     )

@@ -26,31 +26,31 @@ export default class DonorHome extends React.Component {
 }
 
 const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center'
-    },
-    title: {
-      color: 'red',
-      fontWeight: 'bold',
-      fontSize: 20,
-      marginTop: -100,
-      textDecorationLine: 'underline'
-    },
-    button: {
-      backgroundColor: 'red',
-      marginTop: 50,
-      borderRadius: 3,
-      padding:10,
-      width: 310,
-    },
-    buttonText: {
-      color: 'white',
-      fontWeight: 'bold',
-      fontSize: 20,
-      textAlign: 'center'
-    }
-  });
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  title: {
+    color: 'red',
+    fontWeight: 'bold',
+    fontSize: 20,
+    marginTop: -100,
+    textDecorationLine: 'underline'
+  },
+  button: {
+    backgroundColor: 'red',
+    marginTop: 50,
+    borderRadius: 3,
+    padding:10,
+    width: 310,
+  },
+  buttonText: {
+    color: 'white',
+    fontWeight: 'bold',
+    fontSize: 20,
+    textAlign: 'center'
+  }
+});
    

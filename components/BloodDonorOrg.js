@@ -6,11 +6,15 @@ export default class BloodDonorOrg extends React.Component {
     title: 'BloodDonorOrg'
   }
 
+  navigateToScreen = (screen) => {
+    this.props.navigation.navigate(screen);
+  }
+  
   render () {
     return (
-        <View style={styles.container}>
+      <View style={styles.container}>
         <Text style={styles.title}>Blood</Text>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => this.navigateToScreen('QRScan')}>
           <Text style={styles.buttonText}>Withdraw and Encode Identity</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button}>
