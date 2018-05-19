@@ -41,18 +41,21 @@ const styles = StyleSheet.create({
     marginTop: -100,
     backgroundColor: 'red',
     borderRadius: 3,
-    padding:10
+    padding:10,
+    width: 310,
   },
   button: {
     backgroundColor: 'red',
     marginTop: 50,
     borderRadius: 3,
-    padding:10
+    padding:10,
+    width: 310,
   },
   buttonText: {
     color: 'white',
     fontWeight: 'bold',
-    fontSize: 20
+    fontSize: 20,
+    textAlign: 'center'
   },
 });
  

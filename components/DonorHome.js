@@ -14,10 +14,10 @@ export default class DonorHome extends React.Component {
     return (
       <View style={styles.container}>
         <Text style={styles.title}>I Want To Donate</Text>
-        <TouchableOpacity onPress={() => this.navigateToScreen('BloodDonations')} style={styles.buttons}>
+        <TouchableOpacity onPress={() => this.navigateToScreen('BloodDonations')} style={styles.button}>
           <Text style={styles.buttonText}>Blood</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => this.navigateToScreen('BoneMarrowDonations')} style={styles.buttons}> 
+        <TouchableOpacity onPress={() => this.navigateToScreen('BoneMarrowDonations')} style={styles.button}> 
           <Text style={styles.buttonText}>Bone Marrow</Text>
         </TouchableOpacity>
       </View>    
@@ -39,16 +39,18 @@ const styles = StyleSheet.create({
       marginTop: -100,
       textDecorationLine: 'underline'
     },
-    buttons: {
+    button: {
       backgroundColor: 'red',
       marginTop: 50,
       borderRadius: 3,
-      padding:10
+      padding:10,
+      width: 310,
     },
     buttonText: {
       color: 'white',
       fontWeight: 'bold',
       fontSize: 20,
+      textAlign: 'center'
     }
   });
    

@@ -7,7 +7,9 @@ import DonorOrgLogin from './components/DonorOrgLogin';
 import DonorHome from './components/DonorHome';
 import BloodDonations from './components/BloodDonations';
 import BoneMarrowDonations from './components/BoneMarrowDonations';
-
+import DonorOrgHome from './components/DonorOrgHome';
+import BloodDonorOrg from './components/BloodDonorOrg';
+import BoneMarrowDonorOrg from './components/BoneMarrowDonorOrg';
 import LogoHeader from './components/LogoHeader';
 
 export default class App extends React.Component {
@@ -18,7 +20,12 @@ export default class App extends React.Component {
 
 const RootStack = createStackNavigator (
   {
-    Home: { screen: RoleSelect },
+    Home: { 
+      screen: RoleSelect,
+      navigationOptions: {
+        headerBackTitle: null
+      }  
+    },
     DonorLogin: { screen: DonorLogin },
     DonorOrgLogin: { screen: DonorOrgLogin },
     DonorHome: { 
@@ -28,7 +35,19 @@ const RootStack = createStackNavigator (
       } 
     },
     BloodDonations: { screen: BloodDonations },
-    BoneMarrowDonations: { screen: BoneMarrowDonations }
+    BoneMarrowDonations: { screen: BoneMarrowDonations },
+    DonorOrgHome: {
+      screen: DonorOrgHome,
+      navigationOptions: {
+        headerBackTitle: null
+      } 
+    },
+    BloodDonorOrg: {
+      screen: BloodDonorOrg
+    },
+    BoneMarrowDonorOrg: {
+      screen: BoneMarrowDonorOrg
+    }
   }, 
   { 
     navigationOptions: {

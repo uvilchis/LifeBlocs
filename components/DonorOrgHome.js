@@ -1,7 +1,55 @@
-// this page will allow donor orgs to select whether they are blood and bone marrow 
+import React from 'react';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+ 
+export default class DonorOrgHome extends React.Component {
+  static navigationOptions = {
+    title: 'DonorOrgHome'
+  }
+  
+  navigateToScreen = (screen) => {
+    this.props.navigation.navigate(screen);
+  }
+  
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.title}>Select Donation Type</Text>
+        <TouchableOpacity onPress={() => this.navigateToScreen('BloodDonorOrg')} style={styles.button}>
+          <Text style={styles.buttonText}>Blood</Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => this.navigateToScreen('BoneMarrowDonorOrg')} style={styles.button}>
+          <Text style={styles.buttonText}>Bone Marrow</Text>
+        </TouchableOpacity>
+      </View>
+    )
+  }
+}
 
-// im a donor org > blood > options = 1. withdraw blood 2. encode identity to blood 3. send blood 4. receive blood 5. encode test data to blood
-
-// im a donor org > bone marrow > options = 1. withdraw bone marrow 2. encode identity to bone marrow 3. send bone marrow 4. receive bone marrow 5. input bone marrow test data
-
-// both blood and BM pages should have a tracking option 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  title: {
+    color: 'red',
+    fontWeight: 'bold',
+    fontSize: 20,
+    marginTop: -100,
+    textDecorationLine: 'underline'
+  },
+  button: {
+    backgroundColor: 'red',
+    marginTop: 50,
+    borderRadius: 3,
+    padding:10,
+    width: 310,
+  },
+  buttonText: {
+    color: 'white',
+    fontWeight: 'bold',
+    fontSize: 20,
+    textAlign: 'center'
+  }
+})
