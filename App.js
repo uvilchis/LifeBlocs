@@ -11,7 +11,10 @@ import DonorOrgHome from './components/DonorOrgHome';
 import BloodDonorOrg from './components/BloodDonorOrg';
 import BoneMarrowDonorOrg from './components/BoneMarrowDonorOrg';
 import LogoHeader from './components/LogoHeader';
-import QRScan from './components/QRScan';
+import EncodeBloodIdentity from './components/EncodeBloodIdentity';
+import EncodeBoneMarrowIdentity from './components/EncodeBoneMarrowIdentity';
+import ConfirmBloodData from './components/ConfirmBloodData';
+import ConfirmBoneMarrowData from './components/ConfirmBoneMarrowData';
 
 export default class App extends React.Component {
   render() {
@@ -49,8 +52,17 @@ const RootStack = createStackNavigator (
     BoneMarrowDonorOrg: {
       screen: BoneMarrowDonorOrg
     },
-    QRScan: {
-      screen: QRScan
+    EncodeBloodIdentity: {
+      screen: EncodeBloodIdentity
+    },
+    EncodeBoneMarrowIdentity: {
+      screen: EncodeBoneMarrowIdentity
+    },
+    ConfirmBloodData: {
+      screen: ConfirmBloodData
+    },
+    ConfirmBoneMarrowData: {
+      screen: ConfirmBoneMarrowData
     }
   }, 
   { 

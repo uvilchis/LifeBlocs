@@ -1,9 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, TextInput } from 'react-native';
 // import { RNCamera } from 'react-native-camera';
+import { withNavigation } from 'react-navigation';
 
-export default class Camera extends React.Component {
-
+class Camera extends React.Component {
+  constructor(props){
+    super(props);
+  }
+  
   // takePicture = async () => {
   //   console.log('button click')
   //   if (this.camera) {
@@ -12,16 +16,24 @@ export default class Camera extends React.Component {
   //   }
   // }
   
+  takePicture = (screen) => {
+    // all takePicture will do right now is navigate to the next screen in the flow 
+    // the next screen will be determined via props 
+    this.props.navigation.navigate(screen);
+  };
+
   render () {
     return (
       <View style={styles.button}>
-        <TouchableOpacity onPress={this.takePicture}>
+        <TouchableOpacity onPress={() => this.takePicture(this.props.nextScreen)}>
           <Text style={styles.buttonText}>Scan QR Code</Text>
         </TouchableOpacity>
       </View>
     )
   }
 }
+
+export default withNavigation(Camera);
 
 const styles = StyleSheet.create({
   button: {

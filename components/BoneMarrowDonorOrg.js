@@ -6,11 +6,15 @@ export default class BoneMarrowDonorOrg extends React.Component {
     title: 'BoneMarrowDonorOrg'
   }
   
+  navigateToScreen = (screen) => {
+    this.props.navigation.navigate(screen);
+  }
+  
   render () {
     return (
       <View style={styles.container}>
         <Text style={styles.title}>Bone Marrow</Text>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => this.navigateToScreen('EncodeBoneMarrowIdentity')}>
           <Text style={styles.buttonText}>Withdraw and Encode Identity</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button}>

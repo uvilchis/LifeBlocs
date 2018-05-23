@@ -7,15 +7,12 @@ export default class QRScan extends React.Component {
     super(props);
   }
   // lets try making the navigation name dependent on props 
-  static navigationOptions = {
-    title: 'QRScan'
-  }
 
   render () {
     return (
       <View style={styles.container}>
-        <Text>{this.props.screenTitle}</Text>
-  
+        <Text>{'OR Scanner Goes Here'}</Text>
+        <Camera nextScreen={this.props.nextScreen}/>
       </View>
     ) 
   }
@@ -26,6 +23,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
-  },
+    justifyContent: 'center'
+  }
 });

@@ -14,7 +14,7 @@ export default class BloodDonorOrg extends React.Component {
     return (
       <View style={styles.container}>
         <Text style={styles.title}>Blood</Text>
-        <TouchableOpacity style={styles.button} onPress={() => this.navigateToScreen('QRScan')}>
+        <TouchableOpacity style={styles.button} onPress={() => this.navigateToScreen('EncodeBloodIdentity')}>
           <Text style={styles.buttonText}>Withdraw and Encode Identity</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button}>
