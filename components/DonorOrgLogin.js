@@ -55,14 +55,17 @@ const styles = StyleSheet.create({
     fontSize: 20
   },
   button: {
-    backgroundColor: 'red'
+    backgroundColor: 'red',
+    marginTop: 50,
+    borderRadius: 3,
+    padding:10,
+    width: 310,
   },
   buttonText: {
     color: 'white',
     fontWeight: 'bold',
     fontSize: 20,
-    borderRadius: 10,
-    padding: 10
+    textAlign: 'center'
   }
 });
  

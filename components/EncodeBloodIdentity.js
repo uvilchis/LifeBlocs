@@ -14,7 +14,6 @@ export default class EncodeBloodIdentity extends React.Component {
       </View>
     ) 
   }
-  
 }
 
 const styles = StyleSheet.create({

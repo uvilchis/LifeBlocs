@@ -5,18 +5,19 @@ export default class BoneMarrowDonations extends React.Component {
   static navigationOptions = {
     title: 'BoneMarrowDonations'
   }
-     
+  
   render () {
     return (
       <View style={styles.container}>
-         <TouchableOpacity style={styles.topButton}>
-           <Text style={styles.buttonText}>Donate Bone Marrow</Text>
+         <Text style={styles.title}>Bone Marrow</Text>
+         <TouchableOpacity style={styles.button}>
+           <Text style={styles.buttonText}>Donate</Text>
          </TouchableOpacity>
          <TouchableOpacity style={styles.button}>
-           <Text style={styles.buttonText}>Track a Bone Marrow Donation</Text>
+           <Text style={styles.buttonText}>Track a Donation</Text>
          </TouchableOpacity>
          <TouchableOpacity style={styles.button}>
-           <Text style={styles.buttonText}>Confirm a Bone Marrow Donation</Text>
+           <Text style={styles.buttonText}>Confirm a Donation</Text>
          </TouchableOpacity>
       </View>
     )
@@ -35,6 +36,13 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 20,
     marginTop: 50,
+    textDecorationLine: 'underline'
+  },
+  title: {
+    color: 'red',
+    fontWeight: 'bold',
+    fontSize: 20,
+    marginTop: -100,
     textDecorationLine: 'underline'
   },
   topButton: {

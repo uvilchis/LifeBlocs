@@ -9,14 +9,15 @@ export default class BloodDonations extends React.Component {
   render () {
     return (
       <View style={styles.container}>
-         <TouchableOpacity style={styles.topButton}>
-           <Text style={styles.buttonText}>Donate Blood</Text>
+         <Text style={styles.title}>Blood</Text>
+         <TouchableOpacity style={styles.button}>
+           <Text style={styles.buttonText}>Donate</Text>
          </TouchableOpacity>
          <TouchableOpacity style={styles.button}>
-           <Text style={styles.buttonText}>Track a Blood Donation</Text>
+           <Text style={styles.buttonText}>Track a Donation</Text>
          </TouchableOpacity>
          <TouchableOpacity style={styles.button}>
-           <Text style={styles.buttonText}>Confirm a Blood Donation</Text>
+           <Text style={styles.buttonText}>Confirm a Donation</Text>
          </TouchableOpacity>
       </View>
     )
@@ -35,6 +36,13 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 20,
     marginTop: 50,
+    textDecorationLine: 'underline'
+  },
+  title: {
+    color: 'red',
+    fontWeight: 'bold',
+    fontSize: 20,
+    marginTop: -100,
     textDecorationLine: 'underline'
   },
   topButton: {

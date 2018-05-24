@@ -10,7 +10,7 @@ export default class EncodeBoneMarrowIdentity extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <QRScan nextScreen={'ConfirmBoneMarrowData'} navigation={this.props.navigation}/>
+        <QRScan nextScreen={'ConfirmBoneMarrowData'} />
       </View>
     ) 
   }

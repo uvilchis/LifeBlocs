@@ -15,6 +15,7 @@ import EncodeBloodIdentity from './components/EncodeBloodIdentity';
 import EncodeBoneMarrowIdentity from './components/EncodeBoneMarrowIdentity';
 import ConfirmBloodData from './components/ConfirmBloodData';
 import ConfirmBoneMarrowData from './components/ConfirmBoneMarrowData';
+import Success from './components/Success';
 
 export default class App extends React.Component {
   render() {
@@ -47,22 +48,43 @@ const RootStack = createStackNavigator (
       } 
     },
     BloodDonorOrg: {
-      screen: BloodDonorOrg
+      screen: BloodDonorOrg,
+      navigationOptions: {
+        headerBackTitle: null
+      } 
     },
     BoneMarrowDonorOrg: {
-      screen: BoneMarrowDonorOrg
+      screen: BoneMarrowDonorOrg,
+      navigationOptions: {
+        headerBackTitle: null
+      } 
     },
     EncodeBloodIdentity: {
-      screen: EncodeBloodIdentity
+      screen: EncodeBloodIdentity,
+      navigationOptions: {
+        headerBackTitle: null
+      } 
     },
     EncodeBoneMarrowIdentity: {
-      screen: EncodeBoneMarrowIdentity
+      screen: EncodeBoneMarrowIdentity,
+      navigationOptions: {
+        headerBackTitle: null
+      } 
     },
     ConfirmBloodData: {
-      screen: ConfirmBloodData
+      screen: ConfirmBloodData,
+      navigationOptions: {
+        headerBackTitle: null
+      } 
     },
     ConfirmBoneMarrowData: {
-      screen: ConfirmBoneMarrowData
+      screen: ConfirmBoneMarrowData,
+      navigationOptions: {
+        headerBackTitle: null
+      } 
+    },
+    Success: {
+      screen: Success
     }
   }, 
   { 
