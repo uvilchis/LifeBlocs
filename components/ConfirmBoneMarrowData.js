@@ -14,7 +14,7 @@ export default class ConfirmBoneMarrowData extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <ConfirmData type={'BONE MARROW'}/>
+        <ConfirmData type={'Bone Marrow'}/>
       </View>
     )
   }

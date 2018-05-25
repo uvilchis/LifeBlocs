@@ -15,7 +15,7 @@ export default class BoneMarrowDonorOrg extends React.Component {
       <View style={styles.container}>
         <Text style={styles.title}>Bone Marrow</Text>
         <TouchableOpacity style={styles.button} onPress={() => this.navigateToScreen('EncodeBoneMarrowIdentity')}>
-          <Text style={styles.buttonText}>Withdraw and Encode Identity</Text>
+          <Text style={styles.buttonText}>Encode Identity</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button}>
           <Text style={styles.buttonText}>Send</Text>
@@ -37,29 +37,27 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center'
-  },
+  }, 
   title: {
     color: 'red',
     fontWeight: 'bold',
-    fontSize: 20,
+    fontSize: 30,
     marginTop: -100,
-    textDecorationLine: 'underline'
   },
   button: {
     backgroundColor: 'red',
     marginTop: 50,
-    borderRadius: 3,
+    borderRadius: 9,
     width: 310,
   },
   buttonText: {
     color: 'white',
     fontWeight: 'bold',
     fontSize: 20,
-    borderRadius: 20,
     padding: 10,
     textAlign: 'center'
   }
-})
+});
 
 /*
 options 

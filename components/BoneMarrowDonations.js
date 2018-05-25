@@ -30,40 +30,26 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center'
-  },
-  header: {
-    color: 'red',
-    fontWeight: 'bold',
-    fontSize: 20,
-    marginTop: 50,
-    textDecorationLine: 'underline'
-  },
+  }, 
   title: {
     color: 'red',
     fontWeight: 'bold',
-    fontSize: 20,
+    fontSize: 30,
     marginTop: -100,
-    textDecorationLine: 'underline'
-  },
-  topButton: {
-    marginTop: -100,
-    backgroundColor: 'red',
-    borderRadius: 3,
-    padding:10,
-    width: 310,
   },
   button: {
     backgroundColor: 'red',
     marginTop: 50,
-    borderRadius: 3,
-    padding:10,
+    borderRadius: 9,
     width: 310,
   },
   buttonText: {
     color: 'white',
     fontWeight: 'bold',
     fontSize: 20,
+    padding: 10,
     textAlign: 'center'
-  },
+  }
 });
+   
  

@@ -14,7 +14,7 @@ export default class ConfirmBloodData extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <ConfirmData type={'BLOOD'}/>
+        <ConfirmData type={'Blood'}/>
       </View>
     )
   }

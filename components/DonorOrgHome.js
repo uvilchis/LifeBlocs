@@ -31,25 +31,24 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center'
-  },
+  }, 
   title: {
     color: 'red',
     fontWeight: 'bold',
-    fontSize: 20,
+    fontSize: 30,
     marginTop: -100,
-    textDecorationLine: 'underline'
   },
   button: {
     backgroundColor: 'red',
     marginTop: 50,
-    borderRadius: 3,
-    padding:10,
+    borderRadius: 9,
     width: 310,
   },
   buttonText: {
     color: 'white',
     fontWeight: 'bold',
     fontSize: 20,
+    padding: 10,
     textAlign: 'center'
   }
-})
+});

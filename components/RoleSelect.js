@@ -34,21 +34,22 @@ const styles = StyleSheet.create({
     },
     title: {
       color: 'red',
-      fontSize: 20,
+      fontWeight: 'bold',
+      fontSize: 30,
       marginTop: -100,
-      textDecorationLine: 'underline'
     },
     button: {
       backgroundColor: 'red',
       marginTop: 50,
-      borderRadius: 3,
-      padding:10,
+      borderRadius: 9,
       width: 310,
     },
     buttonText: {
       color: 'white',
       fontWeight: 'bold',
       fontSize: 20,
+      borderRadius: 20,
+      padding: 10,
       textAlign: 'center'
     }
   });

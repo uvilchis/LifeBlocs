@@ -14,7 +14,7 @@ class DonorPage extends React.Component {
   render () {
     return (
       <View style={styles.container}>
-        <Text style={styles.text}>DONOR LOGIN</Text>
+        <Text style={styles.text}>Donor Login</Text>
         <TextInput 
           value={this.state.usernameText}
           clearTextOnFocus={true}
@@ -25,7 +25,7 @@ class DonorPage extends React.Component {
           secureTextEntry={true}
         />
         <TouchableOpacity style={styles.button} onPress={() => this.props.confirmLogin('DonorHome')}>
-          <Text style={styles.buttonText}>L O G I N</Text>
+          <Text style={styles.buttonText}>Login</Text>
         </TouchableOpacity>
       </View>
     )
@@ -42,21 +42,22 @@ const styles = StyleSheet.create({
   },
   text: {
     alignSelf: 'center',
+    fontWeight: 'bold',
     color: 'red',
     fontWeight: 'bold',
-    fontSize: 20
+    fontSize: 30
   },
   button: {
     backgroundColor: 'red',
     marginTop: 50,
-    borderRadius: 3,
-    padding:10,
+    borderRadius: 9,
     width: 310,
   },
   buttonText: {
     color: 'white',
     fontWeight: 'bold',
     fontSize: 20,
+    padding: 10,
     textAlign: 'center'
   }
 });
